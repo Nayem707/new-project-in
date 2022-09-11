@@ -21,3 +21,9 @@ font-size: 20px;
 .chekout{
   background-color: aquamarine;
 }
+
+.cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
