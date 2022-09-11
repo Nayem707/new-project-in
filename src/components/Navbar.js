@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import UserContext from "../hooks/context/UserContext";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { items } = useContext(UserContext);
 
   return (
@@ -20,6 +20,12 @@ const Navbar = () => {
           </h2>
         </div>
       </Link>
+      <input
+        type="text"
+        placeholder="search..."
+        className="search"
+        onChange={(e) => props.setUser(e.target.value)}
+      />
     </nav>
   );
 };
